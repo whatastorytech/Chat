@@ -20,6 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/chat', 'ChatController@index')->name('chat');
 
+<<<<<<< HEAD
 Route::get('/message',  function () {
     return 'Hello World';
 });
@@ -33,3 +34,9 @@ Route::post('/message', 'MessageController@store')->name('message.store');
 
 
 
+=======
+Route::get('/message', 'MessageController@index')->name('message');
+Route::post('/message', 'MessageController@store')->name('message.store');
+
+
+>>>>>>> 68fc643d59c3335f57e966d5f230159ef061bfda

@@ -14248,10 +14248,14 @@ var enhanceError = __webpack_require__(28);
  * @param {Object} [response] The response.
  * @returns {Error} The created error.
  */
+<<<<<<< HEAD
 module.exports = function createError(message, config, code, request, response) 
 { 
   console.log(request);
   console.log(response);
+=======
+module.exports = function createError(message, config, code, request, response) {
+>>>>>>> 68fc643d59c3335f57e966d5f230159ef061bfda
   var error = new Error(message);
   return enhanceError(error, config, code, request, response);
 };
@@ -48181,7 +48185,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	var url_store_1 = __webpack_require__(14);
 	var Pusher = (function () {
 	    function Pusher(app_key, options) {
+<<<<<<< HEAD
           console.log(app_key);
+=======
+>>>>>>> 68fc643d59c3335f57e966d5f230159ef061bfda
 	        var _this = this;
 	        checkAppKey(app_key);
 	        options = options || {};

@@ -16,9 +16,13 @@ class MessageController extends Controller
     }
 
     public function store(Request $request)
+<<<<<<< HEAD
     {   
 
         
+=======
+    {
+>>>>>>> 68fc643d59c3335f57e966d5f230159ef061bfda
         $message = $request->user()->messages()->create([
             'body' => $request->body
         ]);

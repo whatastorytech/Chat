@@ -11,14 +11,22 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
+<<<<<<< HEAD
     <script src="{{ asset('public/js/app.js') }}" defer></script>
+=======
+    <script src="{{ asset('js/app.js') }}" defer></script>
+>>>>>>> 68fc643d59c3335f57e966d5f230159ef061bfda
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
+<<<<<<< HEAD
     <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
+=======
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+>>>>>>> 68fc643d59c3335f57e966d5f230159ef061bfda
     <script>
         window.Laravel = {!! json_encode([
             'csrfToken'=> csrf_token(),

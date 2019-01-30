@@ -9,7 +9,11 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.6.*",
         "laravel/tinker": "^1.0",
+<<<<<<< HEAD
         "pusher/pusher-php-server": "^3.3"
+=======
+        "pusher/pusher-php-server": "^3.0"
+>>>>>>> 68fc643d59c3335f57e966d5f230159ef061bfda
     },
     "require-dev": {
         "filp/whoops": "^2.0",

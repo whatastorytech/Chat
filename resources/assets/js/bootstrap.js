@@ -24,9 +24,15 @@ import Echo from 'laravel-echo'
 window.Pusher = require('pusher-js');
 
 window.Echo = new Echo({
+<<<<<<< HEAD
     broadcaster:'pusher',
     key:'d6bfc6a6d1f1e0ab9824',
     cluster:'ap2',
+=======
+    broadcaster: 'pusher',
+    key: process.env.MIX_PUSHER_APP_KEY,
+    cluster: process.env.MIX_PUSHER_APP_CLUSTER,
+>>>>>>> 68fc643d59c3335f57e966d5f230159ef061bfda
     encrypted: true
 });
 

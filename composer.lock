@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "c126137a5093425034c0cab14b978c9d",
+=======
+    "content-hash": "a0d4a6347cb6411b4e7ac7cc1a6cf7b3",
+>>>>>>> 68fc643d59c3335f57e966d5f230159ef061bfda
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1269,6 +1273,7 @@
         },
         {
             "name": "pusher/pusher-php-server",
+<<<<<<< HEAD
             "version": "v3.3.1",
             "source": {
                 "type": "git",
@@ -1279,6 +1284,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/pusher/pusher-http-php/zipball/2279bcd21a608a76f9be1fe0675aa2dd1efb2fa0",
                 "reference": "2279bcd21a608a76f9be1fe0675aa2dd1efb2fa0",
+=======
+            "version": "v3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pusher/pusher-http-php.git",
+                "reference": "5eb4ea29db6d61484a64ae6b0c249aa9d1c84943"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pusher/pusher-http-php/zipball/5eb4ea29db6d61484a64ae6b0c249aa9d1c84943",
+                "reference": "5eb4ea29db6d61484a64ae6b0c249aa9d1c84943",
+>>>>>>> 68fc643d59c3335f57e966d5f230159ef061bfda
                 "shasum": ""
             },
             "require": {
@@ -1319,7 +1336,11 @@
                 "rest",
                 "trigger"
             ],
+<<<<<<< HEAD
             "time": "2019-01-18T12:10:21+00:00"
+=======
+            "time": "2019-01-03T11:08:11+00:00"
+>>>>>>> 68fc643d59c3335f57e966d5f230159ef061bfda
         },
         {
             "name": "ramsey/uuid",

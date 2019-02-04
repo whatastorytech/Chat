@@ -2,34 +2,28 @@
 
 namespace App\Http\Controllers;
 
-use App\Message;
+use App\Events\MessageSentEvent;
+
 use Illuminate\Http\Request;
-use App\Events\MessageCreated;
+use Auth;
 
 class MessageController extends Controller
 {
-    public function index()
+    
+    public function fetch()
     {
-        $messages = Message::with(['user'])->get();
-
-        return response()->json($messages);
+    	return \App\Message::with('user')->get();
     }
 
-    public function store(Request $request)
-<<<<<<< HEAD
-    {   
-
-        
-=======
+    public function sentMessage()
     {
->>>>>>> 68fc643d59c3335f57e966d5f230159ef061bfda
-        $message = $request->user()->messages()->create([
-            'body' => $request->body
-        ]);
+        $user = Auth::user();
 
-        broadcast(new MessageCreated($message))
-                ->toOthers();
+    	$message = $user->messages()->create([
+    		'message' => request()->message
+    	]);
 
-        return response()->json($message);
+        broadcast(new MessageSentEvent($user, $message));
+
     }
 }

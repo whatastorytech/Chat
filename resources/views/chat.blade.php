@@ -1,7 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1 class="text-center">Chat Application</h1>
-    <message :messages="messages"></message>
-    <sent-message v-on:messagesent="addMessage" :user="{{ Auth::user() }}"></sent-message>
+<div class="container">
+    <div class="row justify-content-center">
+        <chat-component></chat-component>
+        <user-component></user-component>
+    </div>
+</div>
 @endsection
